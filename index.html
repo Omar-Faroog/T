@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة ويب</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .element {
+            position: absolute;
+            box-sizing: border-box;
+        }
+        /* Basic styles for elements */
+        .heading { font-size: 2rem; font-weight: 700; color: #1f2937; padding: 0.5rem; }
+        .paragraph { font-size: 1rem; line-height: 1.6; color: #374151; padding: 0.5rem; }
+        .button { padding: 0.75rem 1.5rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; }
+        .image { max-width: 100%; max-height: 100%; object-fit: contain; }
+        .navbar { background: #1f2937; color: white; padding: 1rem; display: flex; justify-content: space-between; align-items: center; }
+        .footer { background: #374151; color: white; padding: 2rem; text-align: center; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 1.5rem; }
+        .input { padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px; }
+        
+        /* Button Styles */
+        .btn-style-primary { background: linear-gradient(135deg, #4f46e5, #7c3aed); color: white; }
+        .btn-style-secondary { background: #f3f4f6; color: #374151; border: 1px solid #d1d5db; }
+        .btn-style-success { background: linear-gradient(135deg, #10b981, #059669); color: white; }
+        .btn-style-danger { background: linear-gradient(135deg, #ef4444, #dc2626); color: white; }
+        .btn-style-outline { background: transparent; color: #4f46e5; border: 2px solid #4f46e5; }
+        
+        
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            .element {
+                position: relative !important;
+                top: auto !important;
+                left: auto !important;
+                margin: 0.5rem auto;
+                display: block;
+                max-width: 100%;
+            }
+            .element.navbar,
+            .element.footer {
+                position: relative !important;
+                width: 100% !important;
+                left: 0 !important;
+                margin: 0.5rem 0;
+            }
+        }
+        
+        @media (min-width: 769px) {
+            .element {
+                position: absolute;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="screen-1" class="screen active" style="position: relative; width: 100%; min-height: 100vh;">
+</div>
+
+</body>
+</html>
