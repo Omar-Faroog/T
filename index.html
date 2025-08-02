@@ -70,6 +70,50 @@
 </head>
 <body>
     <div id="screen-1" class="screen active" style="position: relative; width: 100%; min-height: 100vh;">
+<button class="element button btn-style-success" style="top: 227.85px; left: 251.444px; width: 500px; height: ;   font-family: 'Cairo', sans-serif;" onclick="document.querySelectorAll('.screen').forEach(s => s.classList.add('hidden')); document.getElementById('screen-2').classList.remove('hidden');">انتقال</button></div>
+<div id="screen-2" class="screen hidden" style="position: relative; width: 100%; min-height: 100vh;">
+<div class="element card" style="top: 241.456px; left: 301.344px; width: ; height: ;   font-family: 'Cairo', sans-serif;">
+                    <h3>عنوان البطاقة</h3>
+                    <p>هذا هو محتوى البطاقة. يمكنك تعديله.</p>
+                </div></div>
+
+</body>
+</html>        .btn-style-success { background: linear-gradient(135deg, #10b981, #059669); color: white; }
+        .btn-style-danger { background: linear-gradient(135deg, #ef4444, #dc2626); color: white; }
+        .btn-style-outline { background: transparent; color: #4f46e5; border: 2px solid #4f46e5; }
+        
+        
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            .element {
+                position: relative !important;
+                top: auto !important;
+                left: auto !important;
+                margin: 0.5rem auto;
+                display: block;
+                max-width: 100%;
+            }
+            .element.navbar,
+            .element.footer {
+                position: relative !important;
+                width: 100% !important;
+                left: 0 !important;
+                margin: 0.5rem 0;
+            }
+        }
+        
+        @media (min-width: 769px) {
+            .element {
+                position: absolute;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="screen-1" class="screen active" style="position: relative; width: 100%; min-height: 100vh;">
 <button class="element button btn-style-success" style="top: 227.85px; left: 246px; width: 500px; height: ;   font-family: 'Cairo', sans-serif;" onclick="window.open('mrm.com', '_blank');">انتقال</button></div>
 <div id="screen-2" class="screen hidden" style="position: relative; width: 100%; min-height: 100vh;">
 </div>
